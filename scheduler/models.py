@@ -20,10 +20,3 @@ class Appointment(models.Model):
 
     def __str__(self):
         return self.title
-    
-    ## Prevents saving a smaller or equal to end time
-    # def save(self, *args, **kwargs):
-    #     if self.end_time <= self.start_time:
-    #         return
-    #     else:
-    #         super(Appointment, self).save(*args, **kwargs)
