@@ -15,15 +15,15 @@
 - password: password123
 
 **API Endpoints:**
-- /api/schedule/get/<id>
+- /api/schedule/get/id
 - /api/schedule/create
-- /api/schedule/delete
+- /api/schedule/delete/id
   
-- /api/appointment/get/<id>
+- /api/appointment/get/id
 - /api/appointment/create
-- /api/appointment/delete
+- /api/appointment/delete/id
   
-  
+
 **Curl:**
 
 ```curl -H 'Accept: application/json; indent=4' -u admin:password123 http://127.0.0.1:8000/api/schedule/get/1```
