@@ -72,7 +72,6 @@ class AppointmentView(viewsets.ModelViewSet):
         max_endtime = largest_end_time['end_time']
 
         if request.POST['start_time'] >= request.POST['end_time']:
-            print "start is the same or greater than end time"
             return Response(status=status.HTTP_406_NOT_ACCEPTABLE)
         elif request.POST['start_time'] >= max_starttime:
             return Response(status=status.HTTP_406_NOT_ACCEPTABLE)
